@@ -28,24 +28,28 @@
 	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Hashan</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span>
-	      </button>
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Hashan</a>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+			<!-- Button always visible for small screens -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#blogs-section" class="nav-link"><span>Blogs</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
 	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
 	      <div class="slider-item ">
@@ -56,7 +60,7 @@
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
+		          	<div class="text" id="mobileView">
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Hashan Kogul</span></h1>
 			            <h2 class="mb-4">Software Engineer</h2>
@@ -239,6 +243,16 @@
 							</span>
 							<div class="desc">
 								<h3 class="mb-5">Mobile App Development</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
+								<img src="/images/ui.png"/>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">UI/UX Design</h3>
 							</div>
 						</a>
 					</div>
@@ -453,27 +467,92 @@
     		<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Our Projects</h2>
+            <h2 class="mb-4">My Projects</h2>
             <p>Completed Projects</p>
           </div>
         </div>
     		<div class="row justify-content-center">
-  				<div class="col-md-5 d-flex">
+				<div class="col-md-5 d-flex" onclick="window.location='#';" style="cursor: pointer;">
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/E-learning.png);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="#">TECHE-LEARN | E-Learning Platform</a></h3>
+	    					<h3>TECHE-LEARN | E-Learning Platform</h3>
 	    					<span>Web Application</span>
 	    				</div>
     				</div>
   				</div>
 
-    			<div class="col-md-5 d-flex">
+				  <div class="col-md-5 d-flex" onclick="window.location='#';" style="cursor: pointer;">
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/food-odering-system.png);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="#">FOODIE-EXPRESS | Online Food Ordering System</a></h3>
+	    					<h3>FOODIE-EXPRESS | Online Food Ordering System</h3>
 	    					<span>Web Application</span>
+	    				</div>
+    				</div>
+    			</div>
+				<div class="col-md-5 d-flex">
+					<a href="https://age-calculator-eight-swart.vercel.app/" target="_blank" style="width: 100%; height: 150%; display: block;">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/ageC.jpg); background-size: contain; background-position: center; width: 100%; height: 100%;">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Age Calculator</h3>
+								<span>Web Application</span>
+							</div>
+						</div>
+					</a>
+				</div>
+    		</div>
+    	</div>
+    </section>
+
+	<section class="ftco-section ftco-project" id="blogs-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Blogs</h1>
+            <h2 class="mb-4">My Blogs</h2>
+            <p>Articals</p>
+          </div>
+        </div>
+    		<div class="row justify-content-center">
+  				<div class="col-md-5 d-flex" onclick="window.open('https://medium.com/@Hashan_Kogul/software-design-patterns-b73d80cc177a', '_blank');" style="cursor: pointer;">
+					<a href="https://medium.com/@Hashan_Kogul/software-design-patterns-b73d80cc177a"></a>
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/se.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>Software Design Patterns</h3>
+	    					<span>Blog</span>
+	    				</div>
+    				</div>
+  				</div>
+
+    			<div class="col-md-5 d-flex" onclick="window.open('https://medium.com/@Hashan_Kogul/keys-in-database-management-system-fefd63524e05', '_blank');" style="cursor: pointer;">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/key.webp);background-size: contain; background-position: center;">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>Keys In Database Management System</h3>
+	    					<span>Blog</span>
+	    				</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-5 d-flex" onclick="window.open('https://medium.com/@Hashan_Kogul/evolution-of-data-base-management-system-81825997d2a6', '_blank');" style="cursor: pointer;">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/eva.webp);background-size: contain; background-position: center;">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>Evolution of Data Base Management System</h3>
+	    					<span>Blog</span>
+	    				</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-5 d-flex" onclick="window.open('https://medium.com/@Hashan_Kogul/file-system-vs-data-base-management-system-8e0d933ec00e', '_blank');" style="cursor: pointer;">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/file.webp);background-size: contain; background-position: center;">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>File System Vs Data Base Management System</h3>
+	    					<span>Blog</span>
 	    				</div>
     				</div>
     			</div>
@@ -607,5 +686,21 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+	var lastScrollTop = 0;
+
+		window.addEventListener("scroll", function () {
+			var st = window.pageYOffset || document.documentElement.scrollTop;
+			if (st > lastScrollTop) {
+				// Scrolling down
+				document.querySelector('.ftco-navbar-light.scrolled.awake').classList.remove('scrolling-up');
+			} else {
+				// Scrolling up
+				document.querySelector('.ftco-navbar-light.scrolled.awake').classList.add('scrolling-up');
+			}
+
+			lastScrollTop = st;
+		});
+  </script>
   </body>
 </html>
