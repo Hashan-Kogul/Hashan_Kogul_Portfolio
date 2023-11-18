@@ -50,28 +50,71 @@
 		</div>
 	</nav>
 	
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	      <div class="slider-item ">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/profile-pic.png); margin-bottom: 100px;">
-	          		<div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text" id="mobileView">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Hashan Kogul</span></h1>
-			            <h2 class="mb-4">Software Engineer</h2>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
-    </section>
+	<section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+		  <!-- Slide 1 -->
+		  <div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+			  <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/profile-pic.png); margin-bottom: 100px;">
+				  <div class="overlay"></div>
+				</div>
+				<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+				  <div class="text" id="mobileView">
+					<span class="subheading">Hello!</span>
+					<h1 class="mb-4 mt-3">I'm <span>Hashan Kogul</span></h1>
+					<h2 class="mb-4">Software Engineer</h2>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- Slide 2 -->
+		  <div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+			  <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/profile-pic.png); margin-bottom: 100px;">
+					<div class="overlay"></div>
+				  </div>
+				  <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+					<div class="text" id="mobileView">
+					  <span class="subheading">Hello!</span>
+					  <h2 class="mb-4" style="font-size: medium;">A highly motivated and passionate software developer, I am eager to bring my passion for technology and commitment to innovation to a dynamic team. 
+						With a strong foundation in software development, I am dedicated to delivering high-quality solutions and adapting to the ever-changing tech industry landscape.
+						To find a challenging role where my skills, creativity and strategy can help other businesses succeed.</h2>
+					</div>
+				  </div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- Slide 3 -->
+		  <div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+			  <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/profile-pic.png); margin-bottom: 100px;">
+					<div class="overlay"></div>
+				  </div>
+				  <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+					<div class="text" id="mobileView3">
+					  <span class="subheading">Hello!</span>
+					  <h2 class="mb-4 slide3" style="font-size: medium;">As you discover my portfolio, you'll witness a fusion of creativity and technical understanding. 
+						I invite you to delve into the tasks that exhibit my determination to smooth, efficient code and my potential to carry ideas to existence. 
+						Beyond the pixels and contours of textual content, you may find out a developer who sees every challenge as an opportunity to make a positive impact.<br><br>
 
+						Join me in this adventure of exploration, innovation, and a shared love for the infinite possibilities of era. Your curiosity is the important thing,
+						 and my portfolio is the door to a international where thoughts take flight in the digital realm.</h2>
+					</div>
+				  </div>
+			  </div>
+			  </div>
+			</div>
+		  </div>
+	  
+		</div>
+	  </section>
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
     		<div class="row d-flex">
@@ -94,9 +137,6 @@
                     </p>
 		            <ul class="about-info mt-4 px-md-0 px-2">
 		            	<li class="d-flex"><span>Name :</span> <span>Hashan Kogul Yogendran</span></li>
-		            	<li class="d-flex"><span>Date of birth :</span> <span>March 26, 1999</span></li>
-		            	<li class="d-flex"><span>Address :</span> <span>220/19 Bogawanthalawa Road Norwood</span></li>
-		            	<li class="d-flex"><span>Zip code :</span> <span>22058</span></li>
 		            	<li class="d-flex"><span>Email :</span> <span>hashankogul99uoj@gmail.com</span></li>
 		            	<li class="d-flex"><span>Phone : </span> <span>+94 778707597</span></li>
 		            </ul>
@@ -687,8 +727,14 @@
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
   <script>
+	$(document).ready(function(){
+			$(".owl-carousel").owlCarousel({
+				items: 1, // Number of items to show in the carousel
+				autoplay: true,
+				autoplayTimeout: 5000, // Time between slides in milliseconds
+			});
+	});
 	var lastScrollTop = 0;
-
 		window.addEventListener("scroll", function () {
 			var st = window.pageYOffset || document.documentElement.scrollTop;
 			if (st > lastScrollTop) {
