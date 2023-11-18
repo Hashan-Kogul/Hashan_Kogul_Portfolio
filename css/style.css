@@ -9742,8 +9742,11 @@ textarea.form-control {
 }
 .img{
   width: 100% !important;
-  height: 50% !important;
-  margin-top: 100px !important;
+  height: 60% !important;
+  margin-bottom: -100px !important;
+}
+.owl-carousel.home-slider .owl-dots{
+  bottom: -100px !important;
 }
 }
 html,body{
